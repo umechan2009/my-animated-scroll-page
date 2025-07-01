@@ -1,1 +1,1 @@
-Update product info and X link
+Update product info section text and remove quantity line
