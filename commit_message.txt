@@ -1,1 +1,1 @@
-Update product info section text and remove quantity line
+feat: Add second blog post
