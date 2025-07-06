@@ -1,1 +1,1 @@
-feat: Add second blog post
+Update index.html title to オーガニック腸活ウメﾁｬﾝ
