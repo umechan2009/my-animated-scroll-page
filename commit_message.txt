@@ -1,1 +1,0 @@
-feat: update index.html to show latest 3 blog posts
