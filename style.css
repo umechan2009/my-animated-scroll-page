@@ -360,44 +360,47 @@ footer {
 
 .blog-post-page p {
     font-size: 1.15em; /* Slightly larger font for readability */
-    line-height: 1.8;
+    line-height: 1.9; /* Increased line height for better readability */
     color: #343a40;
     text-shadow: none;
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* Increased margin between paragraphs */
 }
 
 .blog-post-page ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
+    padding-left: 25px; /* Slightly more padding for lists */
+    margin-bottom: 25px;
 }
 
 .blog-post-page li {
-    margin-bottom: 10px;
-    line-height: 1.7;
+    margin-bottom: 12px; /* Increased margin between list items */
+    line-height: 1.8; /* Increased line height for list items */
 }
 
 .blog-post-page strong {
     color: #0056b3; /* Highlight strong text */
+    font-weight: bold; /* Ensure bold is applied */
 }
 
 .blog-post-page .blog-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 30px auto; /* Centered and increased margin */
+    display: block; /* Ensure it's a block element for margin auto */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Slightly stronger shadow */
 }
 
 .blog-post-page figcaption {
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.95em; /* Slightly larger caption font */
     color: #6c757d;
-    margin-top: 5px;
+    margin-top: 10px; /* More space below image */
+    margin-bottom: 30px; /* More space after caption */
 }
 
 .blog-post-page .cta-button {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px; /* Increased margin for CTA */
 }
 
 .blog-post-page .button {
@@ -406,9 +409,12 @@ footer {
     padding: 15px 30px;
     font-size: 1.2em;
     border: none;
+    border-radius: 5px; /* Slightly rounded corners for button */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
 }
 
 .blog-post-page .button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift on hover */
 }
 }
