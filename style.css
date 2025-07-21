@@ -335,6 +335,7 @@ footer {
     color: #343a40; /* Darker heading color */
     text-shadow: none;
     margin-bottom: 15px;
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
 }
 
 .blog-post-page .post-meta {
@@ -359,6 +360,7 @@ footer {
     padding-bottom: 12px; /* More padding below border */
     margin-top: 45px; /* Increased margin top */
     margin-bottom: 25px; /* Increased margin bottom */
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
 }
 
 .blog-post-page p {
