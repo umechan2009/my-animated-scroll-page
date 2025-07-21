@@ -350,6 +350,7 @@ footer {
     padding: 10px 0;
     color: #212529; /* Ensure text color is consistent */
     background: none;
+    display: block; /* Ensure sections stack vertically */
 }
 
 .blog-post-page section h2 {
@@ -373,7 +374,7 @@ footer {
 }
 
 .blog-post-page ul {
-    padding-left: 30px; /* More padding for lists */
+    padding-left: 35px; /* More padding for lists */
     margin-bottom: 30px;
     writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
 }
