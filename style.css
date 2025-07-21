@@ -369,21 +369,25 @@ footer {
     color: #343a40;
     text-shadow: none;
     margin-bottom: 28px; /* Increased margin between paragraphs */
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
 }
 
 .blog-post-page ul {
     padding-left: 30px; /* More padding for lists */
     margin-bottom: 30px;
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
 }
 
 .blog-post-page li {
     margin-bottom: 15px; /* Increased margin between list items */
     line-height: 1.9; /* Increased line height for list items */
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
 }
 
 .blog-post-page strong {
     color: #0056b3; /* Highlight strong text */
     font-weight: bold; /* Ensure bold is applied */
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
 }
 
 /* Removed .blog-image and figcaption styles as images are removed */
