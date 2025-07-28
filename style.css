@@ -397,6 +397,61 @@ footer {
 
 /* Removed .blog-image and figcaption styles as images are removed */
 
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text */
+}
+
+body.dark-mode header {
+    background: linear-gradient(to right, #333333, #555555); /* Darker header gradient */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .header-nav a {
+    color: #f0f0f0;
+}
+
+body.dark-mode .header-nav a:hover {
+    color: #99ccff; /* Lighter hover color */
+}
+
+body.dark-mode .blog-post-full .post-content {
+    background-color: #2a2a2a; /* Darker content background */
+    color: #f0f0f0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .blog-post-full h2,
+body.dark-mode .blog-post-full h3 {
+    color: #99ccff; /* Light blue for headings */
+}
+
+body.dark-mode .blog-post-full p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .blog-post-full .post-meta {
+    color: #aaaaaa;
+}
+
+body.dark-mode .blog-post-full ul {
+    color: #e0e0e0;
+}
+
+body.dark-mode .blog-post-full li {
+    color: #e0e0e0;
+}
+
+body.dark-mode .blog-post-full strong {
+    color: #ffcc00; /* Yellow for strong text */
+}
+
+body.dark-mode footer {
+    background: linear-gradient(to right, #333333, #111111); /* Darker footer gradient */
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.6);
+}
+
 .blog-post-page .cta-button {
     text-align: center;
     margin-top: 60px; /* Increased margin for CTA */
