@@ -48,3 +48,8 @@ my-animated-scroll-page/
 ## 👤 Author
 
 - **X (formerly Twitter)**: [@umechan2009](https://x.com/umechan2009)
+
+## 🖼️ Images
+
+- `footer.png`
+- `tanbo.png`
