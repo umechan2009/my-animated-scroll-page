@@ -1,0 +1,481 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* グラデーションアニメーションのキーフレーム */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Added a comment to trigger GitHub Pages rebuild */
+
+header {
+    background: linear-gradient(to right, #ff6b6b, #ffa07a); /* Vibrant Red-Orange Gradient */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+section {
+    min-height: 100vh; /* 画面いっぱいに表示 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; /* Ensure animations don't overflow */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Default text color for sections */
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.3); /* Increased transparency, removed blur */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    /* backdrop-filter: blur(5px); */ /* Removed for performance */
+}
+
+h2 {
+    font-size: 3.2em;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Section specific styles - More vibrant and diverse gradients */
+.hero-section {
+    background: linear-gradient(to right, #8e2de2, #4a00e0); /* Purple Gradient */
+    color: white;
+}
+
+.section-a {
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Blue Gradient */
+    color: #333;
+}
+
+.section-a .content {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #333;
+}
+
+.image-container {
+    margin-top: 40px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border: 5px solid #fff; /* Add a white border */
+}
+
+.section-b {
+    background: linear-gradient(to right, #ff00cc, #333399); /* Pink-Purple Gradient */
+    color: white;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.95); /* Almost opaque white */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #ff6b6b; /* Colorful border */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+.card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #8e2de2; /* Complementary color */
+}
+
+.card p {
+    font-size: 1em;
+    text-shadow: none;
+}
+
+.section-c {
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* Orange-Red Gradient */
+    color: white;
+}
+
+.item-list {
+    margin-top: 40px;
+}
+
+.list-item {
+    background-color: rgba(255, 255, 255, 0.9); /* White background for list items */
+    color: #333;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    display: inline-block; /* For horizontal alignment if needed */
+    min-width: 200px;
+    border: 2px solid #00c6ff; /* Blue border */
+}
+
+.section-d {
+    background: linear-gradient(to right, #1a2980, #26d0ce); /* Dark Blue to Cyan Gradient */
+    color: white;
+}
+
+.cta-button {
+    margin-top: 50px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #FFD700; /* Gold */
+    color: #333;
+    padding: 20px 40px;
+    font-size: 1.8em;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border: 3px solid #fff; /* White border for pop */
+}
+
+.button:hover {
+    background-color: #FFC107; /* Darker Gold */
+    transform: translateY(-5px) scale(1.05); /* Slight scale on hover */
+}
+
+.section-e {
+    background: linear-gradient(to right, #a8ff78, #78ffd6); /* Green-Cyan Gradient */
+    color: white;
+}
+
+footer {
+    background: linear-gradient(to right, #4b6cb7, #182848); /* Dark Blue Gradient */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1em;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+}
+
+/* AOS specific styles (optional, but good for visual consistency) */
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .button {
+        font-size: 1.5em;
+        padding: 15px 30px;
+    }
+}
+
+/* Blog specific styles */
+.header-nav {
+    margin-top: 20px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #ffd700;
+}
+
+.blog-section {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color: #333;
+    padding: 80px 20px;
+}
+
+.blog-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.blog-list .blog-post-summary {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.blog-list .blog-post-summary:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.blog-list a {
+    text-decoration: none; /* すべてのリンクからアンダーラインを削除 */
+}
+
+.blog-post-summary h3 a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.blog-post-summary h3 a:hover {
+    color: #ff6b6b;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ff6b6b;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #e55a5a;
+}
+
+/* Blog Post Page Specific Styles */
+.blog-post-full {
+    padding: 0 20px;
+}
+
+.blog-post-page {
+    background: #f8f9fa; /* Light gray background for the page */
+    min-height: 100vh;
+    color: #212529;
+}
+
+.blog-post-page .content {
+    background-color: #ffffff;
+    color: #212529; /* Softer black for better readability */
+    text-align: left;
+    padding: 50px 100px; /* Increased padding for a better reading experience */
+    max-width: 800px; /* Wider content area */
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
+}
+
+.blog-post-page h1 {
+    font-size: 2.8em;
+    color: #343a40; /* Darker heading color */
+    text-shadow: none;
+    margin-bottom: 15px;
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
+}
+
+.blog-post-page .post-meta {
+    font-size: 1em;
+    color: #6c757d; /* Muted color for meta data */
+    margin-bottom: 30px;
+    text-shadow: none;
+}
+
+.blog-post-page section {
+    min-height: 0; /* Override the default section height */
+    padding: 10px 0;
+    color: #212529; /* Ensure text color is consistent */
+    background: none;
+    display: block; /* Ensure sections stack vertically */
+}
+
+.blog-post-page section h2 {
+    font-size: 2.3em; /* Slightly larger section heading */
+    color: #495057; /* Slightly lighter heading for sections */
+    text-shadow: none;
+    border-bottom: 3px solid #dee2e6; /* Thicker border */
+    padding-bottom: 12px; /* More padding below border */
+    margin-top: 45px; /* Increased margin top */
+    margin-bottom: 25px; /* Increased margin bottom */
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
+}
+
+.blog-post-page p {
+    font-size: 1.2em; /* Slightly larger font for readability */
+    line-height: 2.0; /* Increased line height for better readability */
+    color: #343a40;
+    text-shadow: none;
+    margin-bottom: 28px; /* Increased margin between paragraphs */
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
+}
+
+.blog-post-page ul {
+    padding-left: 35px; /* More padding for lists */
+    margin-bottom: 30px;
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
+}
+
+.blog-post-page li {
+    margin-bottom: 15px; /* Increased margin between list items */
+    line-height: 1.9; /* Increased line height for list items */
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
+}
+
+.blog-post-page strong {
+    color: #0056b3; /* Highlight strong text */
+    font-weight: bold; /* Ensure bold is applied */
+    writing-mode: horizontal-tb; /* Explicitly set to horizontal writing mode */
+}
+
+/* Removed .blog-image and figcaption styles as images are removed */
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text */
+}
+
+body.dark-mode header {
+    background: linear-gradient(to right, #333333, #555555); /* Darker header gradient */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .header-nav a {
+    color: #f0f0f0;
+}
+
+body.dark-mode .header-nav a:hover {
+    color: #99ccff; /* Lighter hover color */
+}
+
+body.dark-mode .blog-post-full .post-content {
+    background-color: #2a2a2a; /* Darker content background */
+    color: #f0f0f0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .blog-post-full h2,
+body.dark-mode .blog-post-full h3 {
+    color: #99ccff; /* Light blue for headings */
+}
+
+body.dark-mode .blog-post-full p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .blog-post-full .post-meta {
+    color: #aaaaaa;
+}
+
+body.dark-mode .blog-post-full ul {
+    color: #e0e0e0;
+}
+
+body.dark-mode .blog-post-full li {
+    color: #e0e0e0;
+}
+
+body.dark-mode .blog-post-full strong {
+    color: #ffcc00; /* Yellow for strong text */
+}
+
+body.dark-mode footer {
+    background: linear-gradient(to right, #333333, #111111); /* Darker footer gradient */
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.6);
+}
+
+.blog-post-page .cta-button {
+    text-align: center;
+    margin-top: 60px; /* Increased margin for CTA */
+}
+
+.blog-post-page .button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px; /* Slightly rounded corners for button */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
+
+.blog-post-page .button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
