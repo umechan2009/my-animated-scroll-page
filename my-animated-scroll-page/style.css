@@ -3,9 +3,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(135deg, #ffdde1, #ee9ca7, #a2c2e9, #b4a2e9) !important;
-    background-size: 600% 600% !important; /* サイズを大きくしてアニメーションを強調 */
-    animation: gradientAnimation 20s ease infinite !important; /* アニメーション速度を調整 */
+    background-color: #FFB6C1 !important; /* 淡いピンクの単色背景 */
+    /* background-size: 600% 600% !important; */ /* グラデーションではないためコメントアウト */
+    /* animation: gradientAnimation 20s ease infinite !important; */ /* グラデーションではないためコメントアウト */
     color: #333;
     line-height: 1.6;
 }
