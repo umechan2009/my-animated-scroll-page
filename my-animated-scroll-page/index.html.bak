@@ -7,11 +7,10 @@
     <meta name="description" content="自然栽培で育てた特別な玄米「腸活玄米」で、あなたの健康をサポート。食物繊維やGABAが豊富で、毎日の腸活に最適です。美味しい食べ方や最新の腸活ブログも紹介。">
     <meta name="keywords" content="腸活, 玄米, 自然栽培, オーガニック, 健康, 食物繊維, GABA">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" href="style.css?v=202508121600">
+    <link rel="stylesheet" href="style.css?v=202507291500">
     <!-- Cache bust: 202507291500 -->
 </head>
-<body style="background-color: #FFB6C1 !important;">
-
+<body>
     <header>
         <h1>腸活玄米ナチュラルファーミング</h1>
         <p>自然の恵みで、あなたの腸を活性化。</p>
@@ -85,18 +84,6 @@
     <section class="blog-section">
         <div class="content" data-aos="fade-up">
             <h2>最新のブログ記事</h2>
-            <div class="blog-post-summary" data-aos="fade-up">
-                <h2><a href="anemia-autonomic-nervous-system-blog.html?v=202508121500">その不調、貧血が原因かも？自律神経の乱れとの意外な関係</a></h2>
-                <p class="post-meta">2025年8月12日</p>
-                <p>なんだか疲れやすい、立ちくらみがする、気分が落ち込みがち…。その原因不明の不調、もしかしたら「隠れ貧血」が自律神経のバランスを乱しているサインかもしれません。</p>
-                <a href="anemia-autonomic-nervous-system-blog.html?v=202508121500" class="read-more">続きを読む</a>
-            </div>
-            <div class="blog-post-summary" data-aos="fade-up">
-                <h2><a href="cho-suimin-blog.html?v=202508091500">腸を整えると睡眠の質がよくなる！？</a></h2>
-                <p class="post-meta">2025年8月9日</p>
-                <p>「最近、寝つきが悪い」「朝起きてもスッキリしない」と感じることはありませんか？ 現代社会では、多くの人が睡眠の質に悩みを抱えています。睡眠は、心身の健康を維持するために不可欠なもの。しかし、その睡眠の質が、実は私たちの「腸」と深く関係しているとしたら、驚きではないでしょうか？</p>
-                <a href="cho-suimin-blog.html?v=202508091500" class="read-more">続きを読む</a>
-            </div>
             <div class="blog-post-summary" data-aos="fade-up">
                 <h2><a href="genmai-sprout-blog.html?v=202508081500">【驚きの栄養価！】玄米スプラウトは穀物と野菜のハイブリッド！</a></h2>
                 <p class="post-meta">2025年8月8日</p>
