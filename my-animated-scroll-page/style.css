@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* より目立つカラフルなグラデーションと !important を追加 */
     background: linear-gradient(135deg, #ffdde1, #ee9ca7, #a2c2e9, #b4a2e9) !important;
     background-size: 600% 600% !important; /* サイズを大きくしてアニメーションを強調 */
     animation: gradientAnimation 20s ease infinite !important; /* アニメーション速度を調整 */
@@ -17,6 +16,8 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+/* Added a comment to trigger GitHub Pages rebuild */
 
 header {
     background: linear-gradient(to right, #ff6b6b, #ffa07a); /* Vibrant Red-Orange Gradient */
